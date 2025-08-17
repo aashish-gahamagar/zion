@@ -1,10 +1,16 @@
 {
-  "name": "tools",
+  "name": "@zion/tools",
   "version": "0.0.1",
+  "scripts": {
+    "build": "ng build tools",
+    "build:schematics": "tsc -p tsconfig.schematics.json",
+    "build:tools:all": "npm run build && npm run build:schematics"
+  },
   "peerDependencies": {
     "@angular/common": "^20.1.0",
     "@angular/core": "^20.1.0"
   },
+  "schematics": "./schematics/collection.json",
   "dependencies": {
     "tslib": "^2.3.0"
   },
