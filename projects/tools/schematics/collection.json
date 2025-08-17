@@ -1,0 +1,10 @@
+{
+  "$schema": "../../../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "custom-input": {
+      "description": "Add custom input to the project",
+      "factory": "./custom-input/index#addInput",
+      "schema": "./custom-input/schema.json"
+    }
+  }
+}

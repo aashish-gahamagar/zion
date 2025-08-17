@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/schema",
+  "$id": "SchematicsCustomInput",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Name of the input."
+    },
+    "path": {
+      "type": "string",
+      "description": "Path to create the input.",
+      "default": ""
+    }
+  }
+}
