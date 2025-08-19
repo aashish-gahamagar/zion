@@ -112,6 +112,32 @@
           }
         }
       }
+    },
+    "ui-adapter": {
+      "projectType": "library",
+      "root": "projects/ui-adapter",
+      "sourceRoot": "projects/ui-adapter/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular/build:ng-packagr",
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ui-adapter/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/ui-adapter/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular/build:karma",
+          "options": {
+            "tsConfig": "projects/ui-adapter/tsconfig.spec.json"
+          }
+        }
+      }
     }
   }
 }

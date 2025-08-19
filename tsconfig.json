@@ -17,6 +17,9 @@
     "paths": {
       "tools": [
         "./dist/tools"
+      ],
+      "ui-adapter": [
+        "./dist/ui-adapter"
       ]
     }
   },
@@ -40,6 +43,12 @@
     },
     {
       "path": "./projects/tools/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ui-adapter/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/ui-adapter/tsconfig.spec.json"
     }
   ]
 }
